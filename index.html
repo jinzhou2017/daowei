@@ -6,12 +6,144 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
+        <link rel="stylesheet" href="./css/init.css">
+        <link rel="stylesheet" href="./css/main.css">
+        <script type="text/javascript" src="./js/vendor/jquery-1.12.0.min.js"></script>
+        <script type="text/javascript" src="./js/vendor/jquery.flexslider-min.js"></script>
     </head>
     <body>
+    <!--顶部导航-->
+    <div class="top">
+        <div class="nav">
+            <a class="logo"></a>
+            <div class="nav-middle">
+                <span class="nav-middle-image"></span>
+                <a>北京 <span>切换城市</span></a>
+            </div>
+            <ul class="nav-list">
+                <li class="nav-list-items">首页</li>
+                <li class="nav-list-items">下载APP</li>
+                <li class="nav-list-items">服务商</li>
+                <li class="nav-list-items">商家入驻</li>
+                <li class="nav-list-items">关于我们</li>
+                <li class="nav-list-items">商家登录</li>
+            </ul>
+        </div>
+    </div>
+    <!--banner图-->
+    <div class="ban-wrap">
+        <div class="ban-menu">
+            <ul class="ban-menu-list">
+                <li class="ban-menu-item is-show">
+                    <span class="text">家居保洁</span>
+                    <span class="icon"></span>
+                    <ul class="layer">
+                        <li>小时工</li>
+                    </ul>
+                </li>
+                <li class="ban-menu-item">
+                    <span class="text">上门按摩</span>
+                    <span class="icon"></span>
+                    <ul class="layer">
+                        <li>中医推拿</li>
+                    </ul>
+                </li>
+                <li class="ban-menu-item">
+                    <span class="text">上门维修</span>
+                    <span class="icon"></span>
+                    <ul class="layer">
+                        <li>手机维修</li>
+                    </ul>
+                </li>
+                <li class="ban-menu-item">
+                    <span class="text">家电清洗</span>
+                    <span class="icon"></span>
+                    <ul class="layer">
+                        <li>空调清洗</li>
+                    </ul>
+                </li>
+                <li class="ban-menu-item">
+                    <span class="text">衣物洗护</span>
+                    <span class="icon"></span>
+                    <ul class="layer">
+                        <li>洗鞋</li>
+                    </ul>
+                </li>
+                <li class="ban-menu-item">
+                    <span class="text">家居保洁</span>
+                    <span class="icon"></span>
+                    <ul class="layer">
+                        <li>小时工</li>
+                    </ul>
+                </li>
+                <li class="ban-menu-item">
+                    <span class="text">家居保洁</span>
+                    <span class="icon"></span>
+                    <ul class="layer">
+                        <li>小时工</li>
+                    </ul>
+                </li>
+                <li class="ban-menu-item">
+                    <span class="text">家居保洁</span>
+                    <span class="icon"></span>
+                    <ul class="layer">
+                        <li>小时工</li>
+                    </ul>
+                </li>
+                <li class="ban-menu-item">
+                    <span class="text">家居保洁</span>
+                    <span class="icon"></span>
+                    <ul class="layer">
+                        <li>小时工</li>
+                    </ul>
+                </li>
+                <li class="ban-menu-item">
+                    <span class="text">家居保洁</span>
+                    <span class="icon"></span>
+                    <ul class="layer">
+                        <li>小时工</li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+        <div class="ban-image">
+            <div class="flexslider">
+                <ul class="slides">
+                    <li style="background:url(img/ban/banner1.jpg) 50% 0 no-repeat;"></li>
+                    <li style="background:url(img/ban/banner2.jpg) 50% 0 no-repeat;"></li>
+                    <li style="background:url(img/ban/banner3.jpg) 50% 0 no-repeat;"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--content-->
+    <div class="content">
+        <h1>家庭保洁</h1>
+        <h2>小时工/开荒保洁/擦玻璃/深度保洁/家居养护/杀虫除螨</h2>
+
+
+    </div>
 
 
 
+    <script type="text/javascript">
+        /*轮播图初始化*/
+        $(document).ready(function(){
+            $('.flexslider').flexslider({
+                directionNav: true,
+                pauseOnAction: false
+            });
+        });
+        /*侧栏导航*/
+        $(function(){
+            $(".ban-menu-item").hover(function(){
+                $(this).addClass("is-show");
+            },function(){
+                $(this).removeClass("is-show");
+            });
+        })
+
+    </script>
     </body>
 </html>
