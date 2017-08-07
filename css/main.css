@@ -1,4 +1,7 @@
 /*顶部导航*/
+a{
+    text-decoration: none;
+}
 .top{
     height: 70px;
 }
@@ -158,6 +161,9 @@
     padding: 64px 80px 0;
     height: 566px;
 }
+.content:nth-child(even){
+    background-color: #FBF8F8;
+}
 .content h1 {
     height: 31px;
     line-height: 31px;
@@ -174,3 +180,80 @@
     font-weight: bold;
 
 }
+.content .serve {
+    display: block;
+    text-align: right;
+    height: 24px;
+    font-size: 24px;
+    text-decoration: none;
+    color: #898989;
+}
+.content .serve:after{
+    content: '>';
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    width: 16px;
+    height: 23px;
+    background-size: 16px 23px;
+    color: #898989;
+
+
+}
+.content-list{
+    height: 345px;
+    margin-top: 10px;
+    text-align: left;
+}
+.content-item{
+    width: 250px;
+    height: 365px;
+    float: left;
+    margin-right: 10px;
+    border: 1px solid #EAEAEA;
+    box-sizing: border-box;
+    padding: 20px 20px 0 20px;
+
+}
+.content-item:hover{
+    box-shadow: 10px 10px 10px #EAEAEA ;
+}
+.content-item img {
+    width: 210px;
+    height: 210px;
+    margin: 0 auto;
+}
+.content-item h2 {
+    text-align: left;
+    font-size: 23px;
+    margin: 10px 0;
+}
+.content-item p{
+    color: #929292;
+    /*font-size: 14px;*/
+}
+.content-item-foot{
+    margin-top: 10px;
+}
+.content-item-foot span{
+    color: #FB474F;
+    font-size: 16px;
+    font-weight: bold;
+}
+.content-item-foot .price{
+    font-size: 24px;
+}
+.content-item-foot a {
+    float: right;
+    width: 80px;
+    height: 25px;
+    background-color: #FB474F;
+    border-radius: 10%;
+    line-height: 25px;
+    text-align: center;
+    color: white;
+    vertical-align: middle;
+}
+/*底部*/
+
+
