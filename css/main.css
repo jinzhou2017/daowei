@@ -9,10 +9,11 @@ a{
     height: 70px;
     width: 100%;
     position: fixed;
+    white-space: nowrap;
     z-index: 4;
     top: 0;
     left: 0;
-    background-color: rgba(255,255,255,.5);
+    background-color: rgba(255,255,255,.7);
     padding: 0 80px;
 }
 .top .nav .logo{
@@ -21,6 +22,16 @@ a{
     height: 70px;
     background: url("../img/nav/logo.png") no-repeat center;
 
+}
+@media screen and (max-width: 765px) {
+    .top-wrap {
+        display: none;
+    }
+}
+.top-wrap{
+    overflow: hidden;
+    white-space: nowrap;
+    height: 70px;
 }
 .top .nav .nav-middle{
     font-weight: bold;
@@ -209,13 +220,13 @@ a{
     text-align: left;
 }
 .content-item{
-    width: 250px;
+    width: 242px;
     height: 365px;
     float: left;
     margin-right: 10px;
     border: 1px solid #EAEAEA;
     box-sizing: border-box;
-    padding: 20px 20px 0 20px;
+    padding: 16px 16px 0 16px;
 
 }
 .content-item:hover{
