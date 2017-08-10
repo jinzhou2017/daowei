@@ -42,7 +42,7 @@
 }
 .servicer-content-item h2{
     margin-top: 20px;
-    font-size: 21px;
+    font-size: 16px;
     font-weight: bold;
     margin-bottom: 6px;
 }
@@ -57,10 +57,12 @@
 .servicer-content-item-foot span:nth-child(1){
     float: left;
     color: #929292;
+    font-size: 12px;
 }
 .servicer-content-item-foot span:nth-child(2){
     float: right;
     color: #929292;
+    font-size: 12px;
 }
 .servicer-content-right{
     position: absolute;
@@ -81,7 +83,7 @@
     background: url("../img/servicer/tuijianfuwushang_06.jpg") no-repeat;
 }
 .servicer-content-right-bottom-inner{
-    width: 130px;
+     width: 130px;
     height: 130px;
     margin: 0 auto;
     background: url("../img/servicer/daowayApp.png") no-repeat ;

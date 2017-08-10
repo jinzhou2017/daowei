@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="./css/init.css">
         <link rel="stylesheet" href="./css/main.css">
         <link rel="stylesheet" href="./css/shops.css">
-        <script type="text/javascript" src="./js/vendor/jquery-1.12.0.min.js"></script>
+        <script type="text/javascript" src="./js/vendor/jquery-3.2.1.min.js"></script>
         <script type="text/javascript" src="./js/vendor/jquery.flexslider-min.js"></script>
     </head>
     <body>
@@ -87,7 +87,7 @@
                 <div class="shops-form-item"><span><em>*</em>公司名称:</span><input type="text"/></div>
                 <div class="shops-form-item">
                     <span><em>*</em>服务项目:</span>
-                    <b id="bb">
+                    <div id="bb">
                         <input type="checkbox" id="1" value="家庭保洁"><label for="1">家庭保洁</label>
                         <input type="checkbox" id="2" value="上门按摩"><label for="2">上门按摩</label>
                         <input type="checkbox" id="3" value="维修"><label for="3">维修</label>
@@ -99,7 +99,7 @@
                         <input type="checkbox" id="9" value="鲜花"><label for="9">鲜花</label>
                         <input type="checkbox" id="10" value="美容美体"><label for="10">美容美体</label>
                         <input style="width: 120px; height: 22px; line-height: 22px" type="text" id="note"><label for="note">其它</label>
-                    </b>
+                    </div>
                 </div>
                 <div class="shops-form-item"><span><em>*</em>联系电话:</span><input type="text"/></div>
                 <div class="shops-form-item"><span><em>*</em>联系人:</span><input type="text"/></div>
@@ -166,26 +166,6 @@
     <div class="last">
         <p>合作伙伴</p>
         <ul class="last-list">
-            <li class="last-item">
-                <a href="">
-                    <img src="./img/last/lairen.jpg" alt="">
-                </a>
-            </li>
-            <li class="last-item">
-                <a href="">
-                    <img src="./img/last/lairen.jpg" alt="">
-                </a>
-            </li>
-            <li class="last-item">
-                <a href="">
-                    <img src="./img/last/lairen.jpg" alt="">
-                </a>
-            </li>
-            <li class="last-item">
-                <a href="">
-                    <img src="./img/last/lairen.jpg" alt="">
-                </a>
-            </li>
             <li class="last-item">
             <a href="">
                 <img src="./img/last/meidao.jpg" alt="">
@@ -301,7 +281,34 @@
                 $(this).removeClass("is-show");
             });
         })
+        /*顶部动画*/
+        $(function(){
+            $(window).scroll( function(ev) {
+                /* ...do something... */
+                var top = $(this).scrollTop();
+                if (top > 70){
+                    $('.nav').addClass('anim')
+                } else {
+                    $('.nav').removeClass('anim')
+                }
 
+
+            } )
+        })
+        /*禁止用户缩放网页*/
+        var scrollFunc=function(e){
+            e=e || window.event;
+            if(e.wheelDelta && event.ctrlKey){//IE/Opera/Chrome
+                event.returnValue=false;
+            }else if(e.detail){//Firefox
+                event.returnValue=false;
+            }
+        }
+        /*注册事件*/
+        if(document.addEventListener){
+            document.addEventListener('DOMMouseScroll',scrollFunc,false);
+        }//W3C
+        window.onmousewheel=document.onmousewheel=scrollFunc;
     </script>
     </body>
 </html>

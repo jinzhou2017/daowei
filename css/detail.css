@@ -17,6 +17,7 @@
     line-height: 85px;
     font-size: 20px;
     font-weight: bold;
+    cursor: pointer;
 }
 /*右边*/
 .detail-content-right{
@@ -64,7 +65,7 @@
 }
 .detail-c-r-top-content p{
     height: 36px;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 36px;
     text-align: left;
     font-family: 微软雅黑;
@@ -140,15 +141,15 @@
 .detail-text-content h1{
     text-align: center;
     height: 28px;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 28px;
     font-weight: bold;
-    border-bottom: 2px solid #E84B47 ;
+    border-bottom: 3px solid #E84B47 ;
     width: 66px;
     margin-bottom: 23px;
 }
 .detail-text-content p {
-    font-size: 16px;
+    font-size: 14px;
     color: #333333;
     line-height: 20px;
     height: 20px;

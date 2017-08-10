@@ -19,7 +19,7 @@
 }
 .abouts-text-content h1{
     height: 36px;
-    font-size: 23px;
+    font-size: 20px;
     line-height: 36px;
     font-weight: bold;
     border-bottom: 2px solid #E84B47 ;
@@ -27,7 +27,7 @@
     margin: 30px 0;
 }
 .abouts-text-content p {
-    font-size: 22px;
+    font-size: 18px;
     color: #929292;
     margin-bottom: 33px;
 }

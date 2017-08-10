@@ -7,7 +7,7 @@
 .app-ban-img{
     position: absolute;
     top: 200px;
-    left: 705px;
+    left: 632px;
     width: 308px;
     height: 96px;
 }
@@ -19,7 +19,7 @@
 }
 .app-ban-text a{
     color: white;
-    font-size: 22px;
+    font-size: 17px;
 }
 .app-ban-text-top{
     display: flex;
@@ -28,7 +28,7 @@
     height: 37px;
     background: #E62E36;
     margin-bottom: 15px;
-    border-radius: 5% ;
+    border-radius: 5px ;
 }
 .app-ban-text-top a:before{
     content: '';
@@ -44,7 +44,7 @@
     width: 100%;
     height: 37px;
     background: #A0C842;
-    border-radius: 5% ;
+    border-radius: 5px ;
     display: flex;
     align-items: center;
 }
@@ -105,14 +105,14 @@
 .down-list-item-rigth p:first-child{
     margin-top: 70px ;
     height: 24px;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: bold;
     margin-bottom: 10px;
 }
 .down-list-item-rigth .text{
     width: 168px;
     height: 20px;
-    font-size: 16px;
+    font-size: 14px;
     white-space: normal;
 }
 /*banner图2*/
@@ -137,7 +137,7 @@
 .app-ban2-right{
     position: absolute;
     top: 20px;
-    right: 400px;
+    right: 300px;
 }
 /*banner图3*/
 .app-ban3{
@@ -148,7 +148,7 @@
 .app-ban3-left{
     position: absolute;
     top: 20px;
-    left: 300px;
+    left: 250px;
 
 }
 .app-ban3-right p{
@@ -160,19 +160,19 @@
 .app-ban3-right{
     position: absolute;
     top: 150px;
-    right: 400px;
+    right: 250px;
 }
 /*banner图4*/
 .app-ban4{
     position: relative;
-    height: 432px;
+    height: 480px;
     background-color: #FBF8F8;
     margin-top: 24px;
 }
 .app-ban4-left{
     position: absolute;
     top: 150px;
-    left: 300px;
+    left: 200px;
 
 }
 .app-ban4-left p{
@@ -184,6 +184,6 @@
 .app-ban4-right{
     position: absolute;
     top: 20px;
-    right: 400px;
+    right: 250px;
 }
 

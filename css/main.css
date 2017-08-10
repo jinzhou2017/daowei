@@ -2,26 +2,57 @@
 a{
     text-decoration: none;
 }
+/*文字划线*/
+i{
+    font-style: normal;
+    text-decoration: line-through;
+
+}
+/*文字变大*/
+b{
+    font-size: 24px;
+}
+body {
+    color: #333;
+    font: 14px/1.14 "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", tahoma, arial, simsun, "宋体";
+}
+@keyframes myfirst
+{
+    from {
+        transform: rotateX(60deg);
+        opacity: 0;
+
+    }
+    to { transform: rotateX(0deg);
+        opacity: 1;}
+}
 .top{
     height: 70px;
+
+    cursor: pointer;
 }
 .top .nav{
     height: 70px;
     width: 100%;
-    position: fixed;
     white-space: nowrap;
+    background-color: rgba(255,255,255,.7);
+    padding: 0 80px;
+    border-bottom: 1px solid #E5E5E5;
+
+}
+.top .anim{
+    position: fixed;
     z-index: 4;
     top: 0;
     left: 0;
-    background-color: rgba(255,255,255,.7);
-    padding: 0 80px;
+    transform-origin:50% 0;
+    animation: myfirst 1s;
 }
-.top .nav .logo{
+.top .nav .logo {
     float: left;
     width: 280px;
     height: 70px;
     background: url("../img/nav/logo.png") no-repeat center;
-
 }
 @media screen and (max-width: 765px) {
     .top-wrap {
@@ -32,10 +63,11 @@ a{
     overflow: hidden;
     white-space: nowrap;
     height: 70px;
+
 }
 .top .nav .nav-middle{
     font-weight: bold;
-    font-size: 20px;
+    font-size: 16px;
     float: left;
     height: 70px;
     margin-left: 190px;
@@ -65,7 +97,7 @@ a{
     box-sizing: border-box;
     height: 70px;
     width: 641px;
-    padding-top: 22px;
+    padding-top: 28px;
     font-weight: bold;
 }
 .nav-list-items:hover{
@@ -74,14 +106,16 @@ a{
 .top .nav .nav-list li {
     float: left;
     margin-right: 32px;
-    font-size: 20px;
+    font-size: 16px;
+    color: #121212;
 }
 .top .nav .nav-list li:last-child{
     color: white;
     background-color: #E94840;
     height: 28px;
     line-height: 28px;
-    border-radius: 8%;
+    border-radius: 4px;
+    margin-top: -7px;
 }
 /*banner图*/
 .ban-wrap{
@@ -92,7 +126,7 @@ a{
 .ban-menu {
     position: absolute;
     top: 0;
-    left: 106px;
+    left: 80px;
     height: 420px;
     width: 180px;
     background-color: #757881;
@@ -113,8 +147,8 @@ a{
     width: 180px;
     height: 42px;
     line-height: 42px;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 18px;
+    font-weight: 600;
     color: white;
     text-align: center;
 
@@ -165,14 +199,16 @@ a{
 .slides li{height:420px;}
 .flex-control-nav{position:absolute;bottom:10px;z-index:2;width:100%;text-align:center;}
 .flex-control-nav li{display:inline-block;width:14px;height:14px;margin:0 5px;*display:inline;zoom:1;}
-.flex-control-nav a{display:inline-block;width:14px;height:14px;line-height:40px;background:url(../img/ban/dot.png) right 0 no-repeat;overflow:hidden;cursor:pointer;}
+.flex-control-nav a{display:inline-block;width:14px;height:14px;line-height:40px;background:url(../img/ban/dot3.png) right 0 no-repeat;overflow:hidden;cursor:pointer;}
 .flex-control-nav .flex-active{background-position:0 0;}
 
 .flex-direction-nav{position:absolute;z-index:3;width:100%;top:45%;}
 .flex-direction-nav li a{display:block;width:50px;height:50px;overflow:hidden;cursor:pointer;position:absolute;}
 /*content*/
 .content{
-    padding: 64px 80px 0;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 64px 0 0;
     height: 566px;
 }
 .content:nth-child(even){
@@ -191,16 +227,18 @@ a{
     line-height: 25px;
     font-size: 25px;
     text-align: center;
-    font-weight: bold;
+    font-family: "幼圆";
 
 }
 .content .serve {
     display: block;
     text-align: right;
     height: 24px;
-    font-size: 24px;
+    font-size: 20px;
+    padding-right: 0px;
     text-decoration: none;
     color: #898989;
+    font-family: "幼圆";
 }
 .content .serve:after{
     content: '>';
@@ -220,13 +258,13 @@ a{
     text-align: left;
 }
 .content-item{
-    width: 242px;
+    width: 230px;
     height: 365px;
     float: left;
     margin-right: 10px;
     border: 1px solid #EAEAEA;
     box-sizing: border-box;
-    padding: 16px 16px 0 16px;
+    padding: 16px 8px 0 8px;
 
 }
 .content-item:hover{
@@ -239,12 +277,13 @@ a{
 }
 .content-item h2 {
     text-align: left;
-    font-size: 23px;
+    font-size: 16px;
     margin: 10px 0;
+    font-weight: bold;
 }
 .content-item p{
     color: #929292;
-    /*font-size: 14px;*/
+    font-size: 13px;
 }
 .content-item-foot{
     margin-top: 10px;
@@ -270,9 +309,10 @@ a{
 }
 /*底部*/
 .foot{
-    padding-left: 80px;
     padding-top: 86px;
     font-family: '黑体';
+    width: 1200px;
+    margin: 0 auto ;
 }
 .foot h1{
     height: 33px;
@@ -315,8 +355,8 @@ a{
     margin-right: 12px;
 }
 .foot-bottom{
-    margin-top: 60px;
-    padding-left: 80px;
+    width: 1200px;
+    margin: 60px auto 0;
     height: 170px;
     white-space: nowrap;
 }
@@ -327,12 +367,13 @@ a{
     font-family: " 微软雅黑";
     font-size: 18px;
     font-weight: bold;
-    margin-right: 30px;
+    margin-right: 20px;
 }
 .bottom-right{
-    float: left;
+    float: right;
     height: 170px;
-    width: 1100px;
+    width: 1097px;
+
 }
 .bottom-right li {
     float: left;
@@ -340,7 +381,7 @@ a{
     height: 30px;
     text-align: center;
     line-height: 30px;
-    font-size: 20px;
+    font-size: 16px;
 
 }
 .bottom-right li a{
@@ -350,8 +391,10 @@ a{
 /*最后*/
 .last{
     box-sizing: border-box;
+    width: 1200px;
+    box-sizing: border-box;
+    margin: 0 auto;
     height: 250px;
-    padding-left: 80px;
     padding-top: 30px;
     background-color: #FBF8F8;
 }
@@ -369,6 +412,8 @@ a{
     width: 120px;
     height: 60px;
     margin-bottom: 10px;
+    background: white;
+    margin-left: 10px;
 }
 .last-item a{
     display: inline-block;
